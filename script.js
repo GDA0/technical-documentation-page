@@ -47,8 +47,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 250 ||
-    document.documentElement.scrollTop > 250
+    document.body.scrollTop > 500 ||
+    document.documentElement.scrollTop > 500
   ) {
     scrollToTopBtn.style.display = "block";
   } else {
