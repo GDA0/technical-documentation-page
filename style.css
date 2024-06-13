@@ -1,5 +1,59 @@
-@media (width <=458px) {
-    nav {
-        display: none;
-    }
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+    /* Colors */
+    --blackish: #333;
+    --blueish: #007bff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--blackish);
+    border-bottom: 1px solid var(--blackish);
+}
+
+.nav-link:hover {
+    color: var(--blueish);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: unset;
+}
+
+/* Add to your existing CSS file or within a <style> tag in your HTML */
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 2.5vh;
+    right: 2.5vh;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.scroll-to-top:hover {
+    background-color: var(--blackish);
 }
